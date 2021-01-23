@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+        
+        rel="stylesheet">
+        <link rel="stylesheet" href="style3.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+       
+
+        <title>CSS Grids Gallery</title>
+    </head>
+    <body>
+     
+
+      <!-- The grid: three columns -->
+<div class="row7">
+  <div class="column6" onclick="openTab('b1');" style="background:green;">
+    PHOTOGRAPHY
+  </div>
+  <div class="column6" onclick="openTab('b2');" style="background:blue;">
+    Box 2
+  </div>
+  <div class="column6" onclick="openTab('b3');" style="background:red;">
+    Box 3
+  </div>
+</div>
+
+<!-- The expanding grid (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:green">
+  <!-- If you want the ability to close the container, add a close button -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Box 1</h2>
+  <p>Lorem ipsum..</p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:whitesmoke">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Box 2</h2>
+  <div class="row10"> 
+    <div class="column10">
+      <img class="info2" src="pot.png">
+      <img class="info2" src="coffee.svg">
+      
+    </div>
+    <div class="column10">
+      <img class="info2" src="icecream.svg">
+      <img class="info2" src="logo1 copy.svg">
+     
+    </div> 
+    <div class="column10">
+      <img class="info2" src="pot2.png">
+      <img class="info2" src="i.svg">
+      <img class="info2" src="drawing-1 copy.svg">
+      
+    </div>
+    <div class="column10">
+      <img class="info2"  src="Pots1.png">
+      <img class="info2" src="yellow.png">
+    
+    </div>
+  </div>
+
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Box 3</h2>
+  <p>Lorem ipsum..</p>
+</div>
+
+<script src="script.js"></script>
+    </body>
+</html>

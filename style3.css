@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.row7{
+ WIDTH: 100%;
+  margin: auto auto;
+  margin-bottom:0 ;
+  
+}
+.column6 {
+  box-sizing: border-box;
+  float: left;
+  width: 30vw;
+ 
+  padding: 50PX;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  margin-top: 1vh;
+  margin: 0 1vw;
+}
+
+.containerTab {
+  box-sizing: border-box;
+  padding: 20px;
+  color: white;
+  margin-left:AUTO;
+  margin-right:auto;
+
+}
+
+/* Clear floats after the columns */
+.row7:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+img.info2{
+  width: 30vw;
+}
+
+
+
+.row10 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column10 {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column10 {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column10 {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
